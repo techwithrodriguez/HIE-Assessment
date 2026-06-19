@@ -111,6 +111,7 @@
     /* Certificate-only print — flatten everything to avoid position:fixed page repeat */
     body.printing-cert { display: block !important; margin: 0 !important; padding: 0 !important; min-height: 0 !important; }
     body.printing-cert > *:not(.certificate) { display: none !important; }
+    body.printing-cert > #mainContent { display: none !important; }
     body.printing-cert .certificate {
       position: static !important;
       inset: auto !important;
